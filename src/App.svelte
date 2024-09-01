@@ -76,7 +76,7 @@
   .chart-container {
     max-width: 800px;
     width: 100%;
-    padding: 1rem;
+    // padding: 1rem;
   }
 
   #g-viz {
