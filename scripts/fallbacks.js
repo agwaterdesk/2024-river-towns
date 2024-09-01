@@ -109,7 +109,7 @@ const takeScreenshot = async (config, url) => {
 
   // Take the shot
   let screenshot = await page.screenshot({
-    type: "png",
+    type: "jpeg",
     clip,
   });
 
@@ -160,7 +160,7 @@ const createFallbacks = async (url, slug, destinationPath) => {
     for (let i = 0; i < screenshots.length; i++) {
       const screenshot = screenshots[i];
       fs.writeFileSync(
-        `${destinationPath}/${slug}-${screenshot.size}.png`,
+        `${destinationPath}/${slug}-${screenshot.size}.jpeg`,
         Buffer.from(screenshot.screenshot)
       );
     }
