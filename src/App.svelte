@@ -51,7 +51,7 @@
     <span class="town white" />Indicate other towns along the Mississippi River.
   </p>
 
-  <p class="sr-only"></p>
+  <p class="sr-only">A map showing river towns along the border of Arkansas, Tennessee and Mississippi.</p>
 
   <div id="g-viz">
     <Map
