@@ -14,12 +14,8 @@
     polling: 500,
   });
 
-  function getUrlParameter(name) {
-    const params = new URLSearchParams(window.location.search);
-    return params.get(name);
-  }
 
-  let includeCredit = getUrlParameter("credit") != "false";
+
 
   let overlayInfo;
   let marker = null;
@@ -68,12 +64,12 @@
     <Map mapHeight="600" bounds={townBounds} id="overview" />
   </div>
 
-  {#if includeCredit}
+
     <div class="credit">
       Graphic by Jared Whalen /
       <a target="_blank" href="https://agwaterdesk.org/">Ag & Water Desk</a>
     </div>
-  {/if}
+
 </div>
 
 <style lang="scss">
